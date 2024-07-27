@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button, option, input {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  background-color: #4581d5;
+  color: #ffffff;
+  display: flex;
+  height: 7vh;
+  align-items: center;
+}
+
+.header span {
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-self: stretch;
+  width: 97vw;
+  height: 18vh;
+  opacity: 1;
+  background-color: rgb(207, 217, 224);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  border: 0px solid rgb(229, 231, 235);
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.heroImage {
+  height: 30vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 6px;
+  border: 0px solid rgb(229, 231, 235);
+}
+
+.heroContainer h2 {
+  font-weight: 400;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroContainer i {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+/* Media Queries */
+@media (max-width: 481px) {
+  .heroContainer {
+    display: none;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}

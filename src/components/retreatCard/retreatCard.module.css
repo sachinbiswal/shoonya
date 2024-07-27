@@ -1,0 +1,53 @@
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1rem;
+  color: black;
+  border-radius: 8px;
+  width: 300px;
+  cursor: pointer;
+  background-color: rgb(207, 217, 224);
+}
+.img {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+} 
+
+.card p {
+  margin-left: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.card span {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.backButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}

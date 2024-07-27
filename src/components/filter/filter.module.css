@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0.5rem;
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.container select{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    color: #4581d5;
+    border-radius: 10px;
+    border: 1px solid rgb(171, 180, 195);
+    font-size: 1.2rem;
+}
+.container input{
+    background-color: #4581d5;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(171, 180, 195);
+    font-size: 1.2rem;
+}
+
+.container input:focus,.container select:focus{
+outline: none ;
+}
+.container input::placeholder{
+    color:#75a1b7;
+}
+.container option{
+    background-color: #FFFFFF;
+    color:#000000;
+    cursor: pointer;
+}
+.container input{
+    width: 22vw;
+    border-radius:35px;
+    border-color: #4581d5;
+    background-color: white;
+    color: #000;
+}
+/* Media Queries */
+@media (max-width:481px) {
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .container select{
+        background-color: #ffffff;
+        color: #4581d5;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 97%;
+    }   
+    .container input{
+        border-color: #4581d5;
+        width: 94%;
+        margin-top: 0.8rem;
+        background-color: white;
+        color: #000000;
+        border-radius: 35px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
+@media (min-width:482px) and (max-width:600px){
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        gap: 0.8rem;
+    }
+    .container select{
+        background-color: #4581d5;
+        color: #000000;
+        border-radius: 2px;
+        width: 50%;
+    }   
+    .container input{
+        width: 94%;
+        margin-top: 0.8rem;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 6px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
+@media (min-width:601px) and (max-width:768px){
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        gap: 0.8rem;
+        justify-content:center; 
+    }
+    .container select{
+        border-radius: 6px;
+    }   
+    .container input{
+        width: 50%;
+        margin-top: 0.8rem;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 6px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
